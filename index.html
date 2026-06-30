@@ -21,34 +21,34 @@ body {
 
 .page-wrapper {
     width: 100%;
-    max-width: 1500px; 
-    
+    max-width: 1200px; 
     margin: 0 auto; 
-    
     background-color: #ffffff; 
-    
-    
     display: flex;
     flex-direction: column;
     min-height: 100vh; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 header {
     background-color: #3fe139;
     text-align: left;
-    padding: 2%;
+    padding: 20px;
+    font-weight: bold;
 }
 
 nav {
     background-color: #ffffff;
-    padding: 3%;
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     gap: 20px;
+    flex-wrap: end;
 }
 
 nav a {
@@ -56,9 +56,13 @@ nav a {
     color: #333;
     font-weight: bold;
 }
+nav a:hover{
+    color: #efe139
+}
 
 article {
     min-height: 150px;
+    padding: 20px;
 }
 
 footer {
@@ -71,14 +75,7 @@ footer {
     
 </style>
 </head>
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Przychodnia Medyczna</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+
 <body>
 
     <div class="page-wrapper">
