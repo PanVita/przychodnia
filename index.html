@@ -43,12 +43,12 @@
         }
 
         nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: flex-end;
-            gap: 20px;
-            flex-wrap: wrap; /* Poprawiono z 'end' na 'wrap' */
-        }
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
 
         nav a {
             text-decoration: none;
@@ -68,19 +68,21 @@
 
         /* Nowoczesny układ dla sekcji ze zdjęciami "O nas" */
         .about-images {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            margin-top: 15px;
-        }
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center; /* Wyśrodkowuje zdjęcia obok siebie */
+    margin-top: 15px;
+}
 
         .about-images img {
-            flex: 1 1 300px;
-            max-width: 100%;
-            height: auto;
-            object-fit: cover;
-            border-radius: 4px; /* Delikatnie zaokrąglone rogi zdjęć */
-        }
+    flex: 1 1 300px;
+    max-width: 400px; /* Blokuje rozciąganie zdjęć na całą szerokość ekranu */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px; /* Delikatne zaokrąglenie rogów */
+}
 
         /* Układ dla logotypów na dole strony */
         .logos-section {
@@ -127,12 +129,12 @@
         </nav>
 
         <article>
-            <h1>O nas</h1>
-            <div class="about-images">
-                <img src="img/img5.jpg" alt="Zdjęcie przychodni 1">
-                <img src="img/img4.jpg" alt="Zdjęcie przychodni 2">
-            </div>
-        </article>
+    <h1>O nas</h1>
+    <div class="about-images">
+        <img src="img/img5.jpg" alt="Zdjęcie przychodni 1">
+        <img src="img/img4.jpg" alt="Zdjęcie przychodni 2">
+    </div>
+</article>
 
         <article>
             <h1>Godziny przyjęć</h1>
