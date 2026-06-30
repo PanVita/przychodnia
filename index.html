@@ -86,20 +86,32 @@
 
         /* Układ dla logotypów na dole strony */
         .logos-section {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 25px;
-            flex-wrap: wrap;
-            margin-top: auto; /* Pcha logotypy na dół strony */
-            padding-bottom: 30px;
-        }
+    display: flex;
+    justify-content: center; /* Wyśrodkowuje logotypy w poziomie */
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap; /* Pozwala na zrzucenie img2 do nowej linii */
+    margin-top: auto; 
+    padding: 20px;
+}
+.logos-section a {
+    flex: 1 1 30%; /* Będą dążyć do 35%, ale nie mniej niż 30% */
+    max-width: 250px; /* Opcjonalnie: blokada, żeby na ogromnych ekranach nie były gigantyczne */
+    text-align: center;
+}
 
-        .logos-section img {
-            max-width: 100%;
-            height: auto;
-            max-height: 50px; /* Blokuje zbyt duże wyświetlanie logo */
-        }
+        .logos-section a img {
+    width: 100%;
+    height: auto;
+    max-height: 80px; /* Zwiększyłem wysokość, żeby nie były za małe */
+    object-fit: contain;
+}
+.logos-section > img {
+    width: 100%;
+    max-width: 600px; /* Maksymalna szerokość paska, żeby nie rozciągał się w nieskończoność */
+    height: auto;
+    margin-top: 10px; /* Odstęp od górnych logotypów */
+}
 
         footer {
             background-color: #334155;
